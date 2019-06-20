@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <title>Corey Gibson</title>
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <div class="navbar-fixed">
+    <nav class="z-depth-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo hot-yellow-text">Corey Gibson</a>
+          <a href="" data-target="mobile-link" class="sidenav-trigger hot-yellow-text">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="#main-box" class="hot-yellow-text waves-effect">About Me</a>
+            </li>
+            <li>
+              <a href="#image-gallery-hr" class="hot-yellow-text waves-effect">Image Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Page -->
+  <div class="container">
+
+    <div id="main-box">
+      <div class="row">
+        <div class="col s12">
+          <div class="card card-image-background z-depth-5">
+            <div class="fill">
+              <div class="card-content">
+                <p class="flow-text hot-yellow-text call-to-action center-align">Hello, I'm<br /> <strong>Corey Gibson</strong></p>
+                <p class="flow-text near-white-text call-to-action center-align">Hello, I'm Corey Gibson.
+                  After spending my childhood living in on the East Coast of Florida, I moved to Upstate New York to pursue a degree in film. In high school, T.V. Production, playing guitar and surfing consumed most of my life, I spent most high
+                  school days hiding behind an old Casablanca video editing system. Then after school, I would head to the Cocoa Beach Pier and surf until dark or later. After graduation and moving to New York, I became consumed by work. A short time
+                  after, my visions of a career in the film industry turned to become a vision of a professional FireFighter and Paramedic. I joined my local volunteer fire department and started taking any class I could get my hands on. In less than
+                  a handful of months, my life went from shooting videos and surfing to working 12 plus hours a day on an ambulance and a lieutenant at The Hurleyville Fire Dept. <br /><a id="read-more-btn" class="btn modal-trigger lime accent-2"
+                    href="#about-modal">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-card" class="card">
+      <div class="fill">
+        <h5 class="center-align">Contact Me</h5>
+        <div id="google-img">
+          <img class='z-dpeth-1 circle' src="./images/google-photo.jpg" alt="">
+        </div>
+        <div class="row">
+          <div class="col s8 offset-s2 m4 offset-m4">
+            <ul id="social-list">
+              <li>
+                <a href="https://github.com/cgibsonmm">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cgibsonmm">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/corey-gibson-67469569/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/cgibson89">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="contact-btns" class="row">
+          <div class="col s6">
+            <div class="center-align">
+              <a class='btn lime accent-2' href="mailto:cgibsonmm@gmail.com">
+                Email Me
+              </a>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="center-align">
+              <a class="btn lime accent-2" href="callto:18457011742">Call Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Card -->
+    <div class="row">
+      <div id='travel-card' class="col s12 m12 l6">
+        <div class="card z-depth-5">
+          <div id="map-container" class="card-content min-height">
+            <h5 class="center-align card-heading">Travel</h5>
+            <a id="map-btn" class="modal-trigger" href="#map-modal">
+              <img class="responsive-img map-image" src="./images/d3map.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hobbies -->
+      <div id="hobbies-card" class="col s12 m12 l6">
+        <div class="card z-depth-5">
+          <div class="card-content min-height">
+            <h5 class="card-heading center-align">My Hobbies</h5>
+            <ul class="center-align near-white-text flow-text">
+              <li>Playing Guitar</li>
+              <li>Surfing</li>
+              <li>Camping</li>
+              <li>SCUBA Diving</li>
+              <li>Metal Detecting</li>
+              <li>Travel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- image Gallery -->
+    <hr id="image-gallery-hr">
+    <div class="row">
+      <div class="col s12">
+        <div id="image-gallery">
+          <h4 class="center-align">
+            Image Gallery
+          </h4>
+          <div class="slider">
+            <ul class="slides z-depth-5">
+              <li>
+                <img src="./images/London.jpg" alt="London">
+                <div class="caption left-align">
+                  <h4>London</h4>
+                  <h5>- England</h5>
+                </div>
+              </li>
+              <li>
+                <img src="./images/Big-Sur.jpg" alt="Big Sur">
+                <div class="caption left-align">
+                  <h4>Big Sur</h4>
+                  <h5>- California</h5>
+                </div>
+              </li>
+              <li>
+                <img src="./images/Yellowstone.jpg" alt="Yellowstone">
+                <div class="caption left-align">
+                  <h4>Yellowstone</h4>
+                  <h5>- Wyoming</h5>
+                </div>
+              </li>
+              <li>
+                <img src="./images/Jackson-hole.jpg" alt="Jackson Hole">
+                <div class="caption left-align">
+                  <h4>Jackson Hole</h4>
+                  <h5>- Wyoming</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <img class="materialboxed responsive-img" src="./images/bailey.jpg" alt="Bailey">
+      </div>
+      <div class="col s12 m6 l4">
+        <img class="materialboxed responsive-img" src="./images/keys.jpg" alt="Paris">
+      </div>
+      <div class="col s12 m6 l4">
+        <img class="materialboxed responsive-img" src="./images/Paris.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidenav -->
+  <ul class="sidenav" id="mobile-link">
+    <li><a href="#main-box" class="hot-yellow-text">About Me</a></li>
+    <li><a href="#image-gallery-hr" class="hot-yellow-text">Image Gallery</a></li>
+  </ul>
+
+  <!-- Map Modal -->
+  <div id="map-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="right-align modal-close waves-effect waves-green btn-flat"><i class="fas fa-times"></i></a>
+      <h4 class="center-align">Countries I have visited</h4>
+      <p id="error-mess" class="center-align"></p>
+      <svg></svg>
+    </div>
+  </div>
+
+  <!-- About Me Modal -->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="right-align modal-close waves-effect waves-green btn-flat"><i class="fas fa-times"></i></a>
+      <h4 class="center-align">About Me</h4>
+      <p class="flow-text">Hello, I'm Corey Gibson.
+        After spending my childhood living in on the East Coast of Florida, I moved to Upstate New York to pursue a degree in film. In high school, T.V. Production, playing guitar and surfing consumed most of my life, I spent most high school days
+        hiding behind an old Casablanca video editing system. Then after school, I would head to the Cocoa Beach Pier and surf until dark or later. After graduation and moving to New York, I became consumed by work. A short time after, my visions of
+        a career in the film industry turned to become a vision of a professional FireFighter and Paramedic. I joined my local volunteer fire department and started taking any class I could get my hands on. In less than a handful of months, my life
+        went from shooting videos and surfing to working 12 plus hours a day on an ambulance and a lieutenant at The Hurleyville Fire Dept.
+      </p>
+      <p class="flow-text">
+        Skip forward a year or two and while working on an ambulance with a partner that was a self-proclaimed "hacker," I started to take an interest in programming and to learn a more in-depth knowledge of computers. Circa 2009 I built my first
+        word-press website it was called EMS-NOW.com and had hopes of it becoming a Reddit style blog site where emergency workers and first responders would be able to share their personal stories and experiences while on "the job." At the time, I
+        used Wordpress tools to create this site, but with my lack of real knowledge and the cost of different hosting tools, the website did not last for more than a few months. While I built this first site and it failed miserably, still I was
+        fascinated with the idea of creating different websites, and the knowable programming could offer. </p>
+      <p class="flow-text">
+        Once again, I put my dreams to the wayside when I took a full-time position in 2014 as an EMT for FDNY and moved to Brooklyn with the hope of shortly after that being able to be promoted to Fire Fighter. Since then, I have been working
+        overnights on an ambulance in Williamsburg. This work is hard tiring and trying and offers little room for advancement. About three years ago I tried my hand at building a dating website for the local community in Sullivan County New York,
+        which is still live today at <a href="www.sullivandates.com">sullivandates</a> and was built using techniques learned in The Ruby On Rails Tutorial by Michael Hartl. While I found this book to be insightful after reading and re-reading I felt
+        as though I did not have the skills needed to build a full site and the site still sits in the state of a "coming soon" landing page. Since then, I have been using different resources online to learn in and out pieces of Website development
+        and software design. From Codecadamy, Team Treehouse, and Launch School.
+      </p>
+      <p class="flow-text">
+        Today is
+        <ins id="date"></ins>
+        and I am 29 years old living in Queens with my girlfriend, my dog, and a cat. Over the past few years, we have had the opportunity to travel often. I have driven The Pacific Coast Highway, witnessed Old Faithful, visited The Louver, and
+        attend Oktoberfest in Munich. In total, I believe I have been to 22 different country's and. I am also an avid backpacker and camper, and a PADI certified Scuba diver and have dove all over the Caribbean.
+      </p>
+    </div>
+  </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/d3/d3.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="./js/app.js"></script>
+<script src="./js/map.js"></script>
+
+</html>

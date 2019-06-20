@@ -1,0 +1,276 @@
+/* Fonts */
+@font-face {
+  font-family: "Gotham";
+  src: url("./../fonts/gotham/Gotham-Black.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Gotham-Light";
+  src: url("./../fonts/gotham/Gotham-Light.woff") format('woff');
+}
+
+/* Colors */
+:root {
+  --main-bg-color: rgb(132, 140, 142);
+  --dark-grey: rgb(67, 80, 88);
+  --hot-yellow: rgb(220, 247, 99);
+  --hot-yellow-hover: rgb(207, 255, 0);
+  --near-white: rgb(241, 242, 239);
+  --close-grey: rgb(191, 187, 187);
+  --opaque-bg: rgba(67, 80, 88, 0.25);
+}
+
+.hot-yellow-text {
+  color: var(--hot-yellow) !important;
+}
+
+.btn {
+  color: var(--dark-grey) !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+  background-color: var(--hot-yellow-hover);
+}
+
+.btn:visited {
+  background-color: var(--hot-yellow-hover);
+}
+
+.near-white-text {
+  color: var(--near-white) !important;
+}
+
+.card-image-background {
+  background-color: var(--opaque-bg);
+  background: url("./../images/Main-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: var(--dark-grey);
+}
+
+.card .card-content {
+  padding: 15px 24px;
+}
+
+.fill {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.call-to-action {
+  opacity: 0;
+  animation: 1s Fadein 1s forwards;
+}
+
+.indicator-item {
+  background-color: var(--dark-grey) !important;
+}
+
+.indicator-item.active {
+  background-color: var(--hot-yellow) !important;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+body {
+  font-family: "Gotham-Light", Fallback, sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+h1, h2, h3, h4, h5, strong {
+  font-family: 'Gotham', Fallback, sans-serif;
+}
+
+strong {
+  font-size: 1.3em;
+  line-height: 0;
+}
+
+nav a.brand-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+i {
+  color: var(--near-white);
+  font-size: 2em;
+}
+
+ins{
+  text-decoration: none;
+}
+
+hr {
+  padding-top: 50px;
+  width: 50%;
+  border: none;
+  border-bottom: 5px solid var(--hot-yellow);
+}
+
+
+/* Card styling */
+.card h3, h4, h5 {
+  color: var(--hot-yellow);
+  text-shadow: 1px 2px 3px rgb(77, 77, 77);
+}
+
+.card-content h5 {
+  margin: 0 0 0 0;
+}
+
+.card-heading {
+  font-size: 1.3em;
+}
+
+.map-image {
+  padding: 20px;
+}
+
+.modal .modal-content {
+  padding: 24px 0;
+}
+
+nav, .sidenav {
+  background-color: var(--dark-grey);
+}
+
+
+#main-box {
+  padding-top: 30px;
+}
+
+#about-modal p{
+  margin: 10px 50px;
+  padding: 5px;
+}
+
+#read-more-btn{
+  margin-top: 10px;
+}
+
+.height-100{
+  position: relative;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+.min-height{
+  min-height: 300px;
+}
+#contact-links{
+  height: 200px;
+}
+
+#hobbies-travel-row{
+  min-height: 300px;
+}
+
+#social-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact-info {
+  height: 200px;
+  font-size: 1.3em;
+  font-family: 'roboto', sans-serif;
+}
+
+#contact-card{
+  border-radius: 8px;
+  margin: 0.75rem;
+  background: url("./../images/brothers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#contact-card  h5{
+  padding-top: 15px;
+}
+
+#contact-card .row{
+  margin-bottom: 5px;
+}
+
+#contact-btns{
+  padding: 10px 0 30px 0;
+}
+
+#map-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#map-modal, #about-modal {
+  background-color: var(--dark-grey);
+  color: var(--near-white);
+}
+
+#google-img {
+  width: 100%;
+  display: flex;
+}
+
+#google-img img{
+  max-height: 250px;
+  margin: 20px auto;
+
+}
+
+.caption h4, .caption h5 {
+  font-family: "Gotham-Light", Fallback, sans-serif;
+  margin: 0 0 5px 0;
+  text-shadow: 1px 1px 2px var(--dark-grey);
+}
+
+/* Animations */
+@keyframes Fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MediaScreens */
+@media only screen and (min-width: 1700px) {
+  .card-image-background {
+    background-size: contain;
+    background-position: left;
+  }
+}
+
+@media only screen and (min-width: 1355px) {
+  .card-image-background {
+    background-position: bottom right;
+  }
+
+  .min-height{
+    min-height: 350px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    font-size: 1.8em;
+  }
+
+  #main-box h3 {
+    font-size: 2em;
+  }
+
+  .min-height{
+    min-height: 1px;
+  }
+}
